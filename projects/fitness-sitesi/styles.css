@@ -36,9 +36,7 @@ a:hover{
     color: red;
 }
 
-img{
-    min-width: 100%;
-}
+
 
 #btn1{
     padding: 14px 38px;
@@ -64,14 +62,56 @@ img{
 
 .slider{
     background: url(./img/4.jpg);
+    width: 100%;
+    height: 100vh;
     background-size: cover;
+    
 }
+
+@media (max-width: 576px) { 
+    .slider{
+        
+        height: 50vh;
+        
+        
+    }
+ }
+
+
+
 
 
 .slider2{
     background: url(./img/1.jpg);
+    width: 100%;
+    height: 100vh;
     background-size: cover;
+
 }
+
+@media (max-width: 576px) { 
+    .slider2{
+        
+        height: 55vh;
+        
+        
+    }
+ }
+
+
+.card-img-top{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+@media (min-width: 576px) {
+    .card-img-top{
+        
+        height: 30vh;
+        
+    }
+ }
 
 
 .site-footer{
@@ -110,3 +150,5 @@ img{
 .footer-sosyal a:hover{
     color: black;
 }
+
+
