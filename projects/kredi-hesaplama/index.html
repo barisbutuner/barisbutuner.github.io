@@ -36,7 +36,7 @@
 </head>
 <body>
     <h3 style="text-align: center; font-size: 25px; font-weight:700">Kredi Hesaplama</h3>
-    <form action="#" style="margin-top: 5px;">
+  
         <span><b>Kredi Türü Seçiniz:</b></span> <select id="krediTuru"> 
             
             <option value="ıhtıyac">--Kredi Türü Seçiniz--</option>
@@ -59,7 +59,7 @@
 
         <button onclick="hesapla()" class="hesapla">Hesapla</button>
         
-    </form>
+    
 
     <h5 id="sonuc"></h5>
 
@@ -80,63 +80,67 @@
             vadeSayisi=vadeListe.options[vadeListe.selectedIndex].value
 
             //İhtiyaç kredisi 12 aylık taksit
-            if (krediSec==1 && vadeSayisi==12) {
+            if (krediSec=="1" && vadeSayisi=="12") {
                 odenecekToplamTutar=krediTutarı*1.24;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
             
             //Taşıt kredisi 12 aylık taksit
             
-           else if (krediSec==2 && vadeSayisi==12) {
+           else if (krediSec=="2" && vadeSayisi=="12") {
                 odenecekToplamTutar=krediTutarı*1.61;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
 
-            //konut kredisi 12 aylık taksit
-            else if (krediSec==3 && vadeSayisi==12) {
+             //konut kredisi 12 aylık taksit
+            else if (krediSec=="3" && vadeSayisi=="12") {
                 odenecekToplamTutar=krediTutarı*1.29;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
 
             //ihtiyaç kredisi 24 aylık taksit
-            else if (krediSec==1 && vadeSayisi==24) {
+            else if (krediSec=="1" && vadeSayisi=="24") {
                 odenecekToplamTutar=krediTutarı*1.70;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
 
-            //Taşıt kredisi 24 aylık taksit
-            else if (krediSec==2 && vadeSayisi==24) {
+             //Taşıt kredisi 24 aylık taksit
+            else if (krediSec=="2" && vadeSayisi=="24") {
                 odenecekToplamTutar=krediTutarı*1.80;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
 
 
-            //konut kredisi 24 aylık taksit
-            else if (krediSec==3 && vadeSayisi==24) {
+             //konut kredisi 24 aylık taksit
+            else if (krediSec=="3" && vadeSayisi=="24") {
                 odenecekToplamTutar=krediTutarı*1.85;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
 
-            //İhtiyaç kredisi 36 aylık taksit
-            else if (krediSec==1 && vadeSayisi==36) {
+             //İhtiyaç kredisi 36 aylık taksit
+            else if (krediSec=="1" && vadeSayisi=="36") {
                 odenecekToplamTutar=krediTutarı*1.50;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
             
 
-            //Taşıt kredisi 36 aylık taksit
+             //Taşıt kredisi 36 aylık taksit
             
-           else if (krediSec==2 && vadeSayisi==36) {
+           else if (krediSec=="2" && vadeSayisi=="36") {
                 odenecekToplamTutar=krediTutarı*1.90;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
 
-            //Konut kredisi 12 aylık taksit
+             //Konut kredisi 12 aylık taksit
             
-           else if (krediSec==3 && vadeSayisi==36) {
+           else if (krediSec=="3" && vadeSayisi=="36") {
                 odenecekToplamTutar=krediTutarı*1.95;
                 aylikTaksit=odenecekToplamTutar/vadeSayisi;
             }
+
+        else{
+            document.getElementById("sonuc").innerHTML="Lütfen Seçim Yapınız" + sonuc
+        }
             
 
            
