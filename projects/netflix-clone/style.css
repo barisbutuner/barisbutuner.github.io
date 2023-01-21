@@ -1,0 +1,255 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("img/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 150px;
+}
+
+.header-height {
+    height: 80vh;
+}
+
+.inp-height {
+    height: 65px;
+}
+
+.login {
+    text-decoration: none;
+    color: white;
+}
+
+.accordion-button {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    margin-top: 1rem;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(49, 49, 49);
+    color: white;
+
+}
+
+.accordion-body {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-image: url(img/plus-icon.png);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(img/close-icon.png);
+}
+
+footer ul li {
+    margin-top: 1.5rem;
+}
+
+footer ul li a {
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/*login ekranı*/
+
+.box {
+    background-color: rgba(0, 0, 0, 0.895);
+    width: 390px;
+    height: 550px;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.form-control {
+    box-shadow: none !important;
+
+}
+
+
+
+.form-check-input:checked {
+    background-color: rgb(59, 59, 59);
+    box-shadow: none;
+}
+
+.loginfooter {
+    background-color: rgba(0, 0, 0, 0.89);
+
+}
+
+/*browse*/
+.navbar-color {
+    background-color: black !important;
+
+}
+
+
+.netflix-left {
+    padding-left: 57px;
+}
+
+.netflix-right {
+    padding-right: 57px;
+}
+
+.netflix-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+
+
+.netflix-nav button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.netflix-nav button:hover {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+i {
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+.right img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: .4rem;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.795);
+    margin-top: 20px;
+}
+
+.dropdown-item {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-width:767px) {
+    .right {
+        display: flex;
+        justify-content: center;
+
+
+    }
+}
+
+/*video*/
+.netflix-home {
+    width: 100%;
+    position: relative;
+    z-index: 10;    
+     
+}
+
+
+
+
+.netflix-home .content {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+
+
+.card {
+    width: 250px;
+    background: #141414;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    margin: 3px;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.4);
+    z-index: 10;
+}
+
+.card-icon {
+    padding: 0px !important;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.netflix-card-text {
+    font-size: 12px;
+}
+
+.profil {
+    text-decoration: none;
+    color: white;
+}
+
+/*hesap*/
+.hesap{
+    background-color: rgb(252, 235, 214);
+    color: black;      
+    margin-left: 70px;    
+}
+
+.account li {
+    list-style: none;
+}
+
+.account li a {
+    text-decoration: none;
+}
+
+.account-img {
+    width: 50px;
+    height: 40px;
+    
+}
+
