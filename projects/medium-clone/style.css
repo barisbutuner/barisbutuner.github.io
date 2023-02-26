@@ -1,0 +1,34 @@
+.yazi-kutusu {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    animation: blink 2s infinite; /* Animasyon adı, süresi, tekrar sayısı */
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.op-2 {
+    opacity: 0.2;
+}  
+
+.op-4 {
+    opacity: 0.4;
+} 
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
