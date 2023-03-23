@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;      
+}
+
+body{
+    background-color: rgba(17, 131, 157, 0.9);
+}
+
+.location {
+    margin-top: 2rem;
+}
+
+.location-icon {
+    color: white;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.location-icon i {
+    font-size: 30px;
+}
+
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.date-now {
+    margin-top: 3rem;
+}
+
+#current-time {
+    font-size: 60px;        
+}
+
+
+
+.vertical-line::before {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid rgb(163, 238, 163);
+    height: 150px; /* veya istediğiniz yükseklik */
+    
+  }
+    
+  
+
+#current-date {
+    font-size: 60px;    
+}
+
+hr {
+    color: rgb(163, 238, 163);
+}
+
+.location-icon p {
+    margin: 0;
+    padding: 0;    
+}
+
+.location p {
+    text-transform: uppercase;
+}
+
+.location p:nth-child(1) {
+    font-size: 30px;
+    
+}
+
+.location p:nth-child(2) {
+    font-size: 30px;
+    
+}
+
+.location p:nth-child(3) {
+    font-size: 30px;
+    
+}
+
+.time-left-text {
+    font-size: 45px;
+}
+
+#time-left {
+    font-size: 40px;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    .vertical-line {
+      display: none;
+    }
+  } 
+  
