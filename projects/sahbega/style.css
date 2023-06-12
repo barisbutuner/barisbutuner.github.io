@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar-nav > li > a {
+    margin-right: 30px;
+  }
+  
+.navbar-nav .nav-link:hover {    
+    background-color: #F48F51;
+  }
+
+
+.gallery {
+    display: flex;
+    background-color: black;
+    height: 200px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    justify-content: center;
+    align-items: center;
+}  
